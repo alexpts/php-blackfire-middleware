@@ -1,0 +1,35 @@
+{
+    "name": "alexpts/php-blackfire-middleware",
+    "description": "Middleware for service blackfire.io",
+    "homepage": "https://github.com/alexpts/php-blackfire-middleware",
+    "license": "MIT",
+    "type": "library",
+    "keywords": [
+        "middleware",
+        "psr-7",
+        "psr-15",
+        "profiler",
+        "blackfire"
+    ],
+
+    "authors": [{
+        "name": "Alexpts",
+        "email": "alexpts3@gmail.com"
+    }],
+    "config": {
+        "optimize-autoloader": true
+    },
+    "minimum-stability": "stable",
+    "require": {
+        "php": "~7.2",
+        "psr/http-server-middleware": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "PTS\\PSR15\\BlackFireMiddleware\\": "src"
+        }
+    },
+    "require-dev": {
+        "blackfire/php-sdk": "^1.18"
+    }
+}
